@@ -1,0 +1,15 @@
+type Partner =
+  | "alpinion"
+  | "aesculap"
+  | "novos"
+  | "mediblu"
+  | "radian"
+  | "jumper"
+  | "comen"
+  | "biolight"
+  | "inbody"
+  | "yesng"
+  | "accessories"
+  | "health"
+  | "long fian"
+  | "ynk";

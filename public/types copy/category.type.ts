@@ -1,0 +1,15 @@
+type Category =
+  | "AED / Defibrilltor"
+  | "Blood Pressure Monitor"
+  | "Digital Electrocardiograph"
+  | "Electrosurgical Unit"
+  | "Operating Room"
+  | "Fetal Doppler / Feal Monitors"
+  | "NICU Unit"
+  | "Oxygen Concentrator"
+  | "Operating Table"
+  | "Pulse Oximeter"
+  | "Patient Monitor / Central Monitor"
+  | "Suction"
+  | "Ultrasound"
+  | "Vital Sings Monitor";
