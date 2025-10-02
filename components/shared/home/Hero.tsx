@@ -6,7 +6,7 @@ import React from "react";
 const Hero = () => {
   return (
     <section className="relative mx-auto max-w-7xl px-4 sm:px-6 ">
-      <div className="grid grid-cols-1 items-center gap-8 p-8 mt-8 md:grid-cols-2 bg-[url('/images/untitled-design1.svg')] rounded-lg">
+      <div className="grid grid-cols-1 items-center gap-8 p-8 md:grid-cols-2 bg-[url('/images/untitled-design1.svg')] rounded-lg">
         <div>
           <Badge className="mb-4 bg-[#41b2fd] hover:bg-[#2aa4f3]">
             Premium Medical Devices

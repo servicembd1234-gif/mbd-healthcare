@@ -29,9 +29,9 @@ const Header = () => {
             >
               Instrument
             </NavLink>
-            {/* <NavLink href="/supply-and-service">Supply & Service</NavLink>
+            <NavLink href="/supply-and-service">Supply & Service</NavLink>
             <NavLink href="/how-to-use">How to Use</NavLink>
-            <NavLink href="/about-us">About Us</NavLink> */}
+            <NavLink href="/about-us">About Us</NavLink>
           </ul>
         </nav>
         <MoblieMenu />

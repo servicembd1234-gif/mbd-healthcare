@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import Badge from "./Badge";
+import { Product } from "@/public/types/product.type";
 
 function ProductCard({ p }: { p: Product }) {
   const img = p.image
@@ -23,7 +24,7 @@ function ProductCard({ p }: { p: Product }) {
         </Badge>
       )}
 
-      <div className="flex h-52 items-center justify-center bg-gradient-to-tr from-sky-50 to-slate-50 text-5xl text-sky-500">
+      <div className="flex items-center justify-center bg-gradient-to-tr from-sky-50 to-slate-50 text-5xl text-sky-500">
         <Image
           src={img}
           width={400}

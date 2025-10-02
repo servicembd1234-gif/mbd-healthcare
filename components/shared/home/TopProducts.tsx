@@ -2,6 +2,7 @@ import React from "react";
 import ProductCard from "../ProductCard";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { Product } from "@/public/types/product.type";
 
 const TOP_PRODUCTS: Product[] = [
   {
@@ -10,7 +11,7 @@ const TOP_PRODUCTS: Product[] = [
     partner: "alpinion",
     category: "Ultrasound",
     badge: "bestseller",
-    image: "/images/products/tops/alpinion ecube 8.svg",
+    image: "/images/products/catalogs/alpinion e cube 8.svg",
     desc: "A premium ultrasound system designed for versatile diagnostic applications, including OB/GYN, cardiology, vascular, abdominal, and small organs. It delivers high image quality with advanced features for accurate and efficient examinations.",
   },
   {
@@ -19,7 +20,7 @@ const TOP_PRODUCTS: Product[] = [
     partner: "alpinion",
     category: "Ultrasound",
     badge: "bestseller",
-    image: "/images/products/tops/alpinion ecube 12.svg",
+    image: "/images/products/catalogs/alpinion e cube 12.svg",
     desc: "A high-performance ultrasound machine offering enhanced imaging clarity and intuitive workflow. Ideal for comprehensive clinical use, supporting detailed diagnostics in various specialties such as cardiology, musculoskeletal, and general imaging."
   },
   {
@@ -27,7 +28,7 @@ const TOP_PRODUCTS: Product[] = [
     name: "Alpinion X-CUBE 60",
     partner: "alpinion",
     category: "Ultrasound",
-    image: "/images/products/tops/alpinion xcube 60.svg",
+    image: "/images/products/catalogs/alpinion x cube 60.svg",
     desc: "A next-generation ultrasound system providing superior image resolution and fast performance. Built for advanced diagnostics, it ensures precision and efficiency across a wide range of medical fields."
   },
 ];

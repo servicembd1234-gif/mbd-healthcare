@@ -1,5 +1,6 @@
 import React from "react";
 import ProductCard from "../ProductCard";
+import { Product } from "@/public/types/product.type";
 
 const TOP_PRODUCTS: Product[] = [
   {
@@ -8,8 +9,8 @@ const TOP_PRODUCTS: Product[] = [
     partner: "jumper",
     category: "Patient Monitor / Central Monitor",
     badge: "new",
-    image: "/images/products/news/jumper jpd-600p.svg",
-    desc: "A high-performance fetal monitor designed for continuous monitoring of fetal heart rate and uterine contractions, ideal for hospitals and clinics to support safe pregnancy management."
+    image: "/images/products/catalogs/jumper jpd-600p.svg",
+    desc: "A high-performance fetal monitor designed for continuous monitoring of fetal heart rate and uterine contractions, ideal for hospitals and clinics to support safe pregnancy management.",
   },
   {
     id: "2",
@@ -17,24 +18,24 @@ const TOP_PRODUCTS: Product[] = [
     partner: "jumper",
     category: "Patient Monitor / Central Monitor",
     badge: "new",
-    image: "/images/products/news/jumper jpd-300p.svg",
-    desc: "A portable fetal monitor offering reliable fetal heart rate tracking with a compact design, perfect for use in clinics, home care, or mobile medical services."
+    image: "/images/products/catalogs/jumper jpd-300p.svg",
+    desc: "A portable fetal monitor offering reliable fetal heart rate tracking with a compact design, perfect for use in clinics, home care, or mobile medical services.",
   },
   {
     id: "3",
     name: "Jumper HA120",
     partner: "jumper",
     category: "Blood Pressure Monitor",
-    image: "/images/products/news/jumper ha120.svg",
-    desc: "A digital blood pressure monitor that provides accurate and quick measurements, featuring an easy-to-read display and user-friendly interface for home and clinical use."
+    image: "/images/products/catalogs/jumper jpd-ha120.svg",
+    desc: "A digital blood pressure monitor that provides accurate and quick measurements, featuring an easy-to-read display and user-friendly interface for home and clinical use.",
   },
   {
     id: "4",
     name: "Radiant Wammer KR-1000",
     partner: "novos",
     category: "Electrosurgical Unit",
-    image: "/images/products/news/novos kr-1000.svg",
-    desc: "An AED (Automated External Defibrillator) with voice prompts and simple operation, designed for emergency cardiac care in public spaces, clinics, and hospitals."
+    image: "/images/products/catalogs/novos kr-1000.svg",
+    desc: "An AED (Automated External Defibrillator) with voice prompts and simple operation, designed for emergency cardiac care in public spaces, clinics, and hospitals.",
   },
 ];
 
