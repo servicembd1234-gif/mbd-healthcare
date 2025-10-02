@@ -70,7 +70,7 @@ const Page = () => {
   return (
     <>
       <Header />
-      <section id="products" className="">
+      <section id="products" className="bg-slate-50">
         <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6">
           <div className="h-60 rounded-2xl p-8 bg-[url('/untitled-design.svg')] bg-cover bg-center bg-no-repeat">
           <Breadcrumbs />

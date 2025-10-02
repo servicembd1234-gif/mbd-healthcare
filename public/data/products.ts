@@ -206,7 +206,7 @@ export const RAW_PRODUCTS: Product[] = [
     partner: "jumper",
     category: "Fetal Doppler / Feal Monitors",
     desc: "Portable fetal doppler for routine prenatal examinations.",
-    image: "/images/products/catalogs/jumper jpd-200c+.svg",
+    image: "/images/products/catalogs/jumper jpd-200cp.svg",
     badge: "new"
   },
 

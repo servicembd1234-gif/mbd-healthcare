@@ -13,12 +13,12 @@ export default function HomePage() {
       <Header />
       <Hero />
       <Brands />
-      <div className="bg-gradient-to-br from-sky-50 to-white">
+      <div className="bg-slate-50">
         <NewProducts />
         <TopProducts />
+        <Features />
+        <ContactLocation />
       </div>
-      <Features />
-      <ContactLocation />
       <Footer />
     </main>
   );
