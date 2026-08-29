@@ -24,7 +24,7 @@ const ContactLocation = () => {
           <div className="flex items-center gap-3">
             <Phone className="h-5 w-5 text-[#41b2fd]" />
             <a href="tel:+6653240640" className="hover:underline">
-              0-53240-640-1
+              0-53240-640-2 , 081-980-0404
             </a>
           </div>
           <div className="flex items-center gap-3">
