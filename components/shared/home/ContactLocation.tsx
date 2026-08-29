@@ -28,12 +28,6 @@ const ContactLocation = () => {
             </a>
           </div>
           <div className="flex items-center gap-3">
-            <Printer className="h-5 w-5 text-[#41b2fd]" />
-            <a href="tel:+6653240642" className="hover:underline">
-              0-5324-0642
-            </a>
-          </div>
-          <div className="flex items-center gap-3">
             <Mail className="h-5 w-5 text-[#41b2fd]" />
             <a
               href="mailto:info@mbd-healthcare.com"
