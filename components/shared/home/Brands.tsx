@@ -25,16 +25,6 @@ const Brands = () => {
       link: "https://www.jumper-medical.com/en/index.aspx",
     },
     {
-      src: "/images/brands/inbody.svg",
-      alt: "INBODY",
-      link: "https://inbodyusa.com/",
-    },
-    {
-      src: "/images/brands/biolight.svg",
-      alt: "BIOLIGHT",
-      link: "https://global.blt.com.cn/en/index.html",
-    },
-    {
       src: "/images/brands/bbraun.svg",
       alt: "BBRAUN",
       link: "https://www.bbraun.co.th/en.html",

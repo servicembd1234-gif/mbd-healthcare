@@ -12,9 +12,12 @@ export default function HowToUseClient() {
       <Header />
       <section className="bg-slate-50">
         <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6">
-          <div className="h-60 rounded-2xl p-8 bg-[url('/images/hero-how-to-use.png')] bg-cover bg-center bg-no-repeat">
-            <Breadcrumbs />
-            <h2 className="text-2xl md:text-4xl font-bold">How to use</h2>
+          <div className="relative h-60 overflow-hidden rounded-2xl p-8 bg-[url('/images/hero-how-to-use.png')] bg-cover bg-center bg-no-repeat">
+            <div className="absolute inset-0 bg-black/50" />
+            <div className="relative">
+              <Breadcrumbs className="text-white [&_svg]:text-white/70 [&_a]:text-white/80" />
+              <h2 className="text-2xl md:text-4xl font-bold text-white">How to use</h2>
+            </div>
           </div>
 
           <div className="mt-10 flex flex-col items-center justify-center rounded-2xl border bg-white px-6 py-20 text-center">

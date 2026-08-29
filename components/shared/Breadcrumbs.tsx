@@ -11,6 +11,7 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import React from "react";
+import { cn } from "@/lib/utils";
 
 type Crumb = { label: string; href?: string };
 
@@ -20,6 +21,7 @@ type Props = {
   hideRoot?: boolean;
   transformLabel?: (segment: string) => string;
   trail?: Crumb[];
+  className?: string;
 };
 
 function defaultTransform(s: string) {
@@ -37,6 +39,7 @@ export default function Breadcrumbs({
   hideRoot = false,
   transformLabel = defaultTransform,
   trail,
+  className,
 }: Props) {
   const pathname = usePathname() || "/";
   const pathOnly = pathname.split("?")[0].split("#")[0];
@@ -72,7 +75,7 @@ export default function Breadcrumbs({
 
   return (
 <Breadcrumb>
-  <BreadcrumbList className="text-black">
+  <BreadcrumbList className={cn("text-black", className)}>
     {items.map((item, i) => {
       const isLast = i === items.length - 1;
       return (
