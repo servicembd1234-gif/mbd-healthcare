@@ -1,0 +1,82 @@
+generator client {
+  provider      = "prisma-client-js"
+  binaryTargets = ["native", "debian-openssl-3.0.x"]
+}
+
+datasource db {
+  provider = "mysql"
+}
+
+enum RepairStatus {
+  RECEIVED
+  REPAIRING
+  FOREIGN_CONTACT
+  QUOTATION
+  APPROVED
+  WAITING_PART
+  WAITING_CLAIM
+  DONE
+  CANCELLED
+}
+
+model RepairReceipt {
+  id                      Int      @id @default(autoincrement())
+
+  receiptNo               String?   @unique
+  docDate                 DateTime
+  status                  RepairStatus
+
+  customer                String   @db.VarChar(100)
+  department              String   @db.VarChar(100)
+  deviceName              String?  @db.VarChar(100)
+  brand                   String   @db.VarChar(100)
+  model                   String?  @db.VarChar(100)
+  serial                  String?  @db.VarChar(100)
+  assetNo                 String?  @db.VarChar(100)
+
+  symptom                 String?  @db.Text
+
+  inWarranty              Boolean  @default(false)
+  outWarranty             Boolean  @default(false)
+
+  reporterName            String?  @db.VarChar(100)
+  reporterPhone           String?  @db.VarChar(50)
+
+  responsible1            String?  @db.VarChar(100)
+  responsible2            String?  @db.VarChar(100)
+
+  sender                  String?  @db.VarChar(100)
+  senderNumber            String?  @db.VarChar(50)
+
+  accessories             String?  @db.Text
+  note                    String?  @db.Text
+
+  serviceWorkshop         Boolean  @default(false)
+  serviceWorkshopDate     DateTime?
+  serviceOnsite           Boolean  @default(false)
+  serviceOnsiteDate       DateTime?
+  serviceExternal         Boolean  @default(false)
+  serviceExternalCompany  String?  @db.VarChar(100)
+  serviceExternalDate     DateTime?
+
+  stUsable                Boolean  @default(false)
+  stReturn                Boolean  @default(false)
+  quoteNo                 String?  @db.VarChar(100)
+
+  responsibleTechName     String?  @db.VarChar(100)
+  inspectorName           String?  @db.VarChar(100)
+
+  returnDate                   DateTime?
+
+  quotationApproved            Boolean   @default(false)
+  quotationRejected            Boolean   @default(false)
+  quotationNotRequired         Boolean   @default(false)
+
+  createdAt               DateTime @default(now())
+  updatedAt               DateTime @updatedAt
+
+  @@index([receiptNo])
+  @@index([docDate])
+  @@index([status])
+}
+
