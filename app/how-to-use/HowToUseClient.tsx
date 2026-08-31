@@ -15,8 +15,9 @@ const YOUTUBE_CHANNEL_URL = "https://www.youtube.com/@MBDProject";
 const ALL_VIDEOS: TutorialVideo[] = (() => {
   const seen = new Set<string>();
   const list: TutorialVideo[] = [];
-  for (const videos of [...Object.values(PRODUCT_VIDEOS), [GENERAL_VIDEOS]].flat()) {
-    for (const v of videos as TutorialVideo[]) {
+  const groups: TutorialVideo[][] = [...Object.values(PRODUCT_VIDEOS), GENERAL_VIDEOS];
+  for (const videos of groups) {
+    for (const v of videos) {
       if (!seen.has(v.id)) {
         seen.add(v.id);
         list.push(v);
