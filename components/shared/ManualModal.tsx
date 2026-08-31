@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { CheckCircle2, ShieldAlert, X } from "lucide-react";
 import { Product } from "@/public/types/product.type";
 import { TutorialVideo } from "@/public/data/productVideos";
@@ -101,9 +102,9 @@ export default function ManualModal({
           <p>
             ข้อมูลนี้เป็นภาพรวมทั่วไปเท่านั้น กรุณาปฏิบัติตามคู่มือการใช้งานฉบับเต็ม
             (IFU) ที่มาพร้อมเครื่อง หรือ{" "}
-            <a href="/#contact" onClick={onClose} className="font-semibold underline">
+            <Link href="/#contact" onClick={onClose} className="font-semibold underline">
               ติดต่อทีม MBD Healthcare
-            </a>{" "}
+            </Link>{" "}
             สำหรับรายละเอียดการใช้งานที่ถูกต้องและปลอดภัย
           </p>
         </div>
