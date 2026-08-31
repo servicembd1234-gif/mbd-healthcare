@@ -81,11 +81,15 @@ export default function HowToUseClient() {
                     className="h-full w-full object-cover transition group-hover:scale-105"
                     loading="lazy"
                   />
-                  <div className="absolute inset-0 flex items-center justify-center bg-black/20 opacity-0 transition group-hover:opacity-100">
-                    <span className="flex h-14 w-14 items-center justify-center rounded-full bg-[#FF0000] text-white">
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent transition group-hover:from-black/50" />
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <span className="flex h-14 w-14 items-center justify-center rounded-full bg-[#FF0000] text-white shadow-lg ring-4 ring-white/30 transition group-hover:scale-110">
                       <Play className="h-6 w-6 fill-white" />
                     </span>
                   </div>
+                  <span className="absolute right-2 bottom-2 rounded bg-black/80 px-1.5 py-0.5 text-xs font-medium text-white">
+                    MBD Project
+                  </span>
                 </div>
                 <div className="p-4">
                   <p className="line-clamp-2 font-medium text-slate-800">
