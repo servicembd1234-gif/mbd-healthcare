@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { Youtube, Play } from "lucide-react";
+import { Youtube, Play, PlayCircle } from "lucide-react";
 import Header from "@/components/shared/Header";
 import Footer from "@/components/shared/Footer";
 import Breadcrumbs from "@/components/shared/Breadcrumbs";
@@ -78,18 +78,36 @@ export default function HowToUseClient() {
                   <img
                     src={`https://img.youtube.com/vi/${video.id}/hqdefault.jpg`}
                     alt={video.title}
-                    className="h-full w-full object-cover transition group-hover:scale-105"
+                    className="h-full w-full object-cover grayscale-[15%] transition group-hover:scale-105"
                     loading="lazy"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent transition group-hover:from-black/50" />
+
+                  {/* consistent brand-tint overlay so every thumbnail reads as one series */}
+                  <div className="absolute inset-0 bg-gradient-to-b from-[#0a3a5c]/55 via-[#0a3a5c]/10 to-black/60" />
+                  <div className="absolute inset-0 bg-[#41b2fd]/10 mix-blend-multiply" />
+
+                  {/* top-left kicker badge */}
+                  <div className="absolute left-3 top-3 flex items-center gap-1.5 rounded-full bg-white/95 px-2.5 py-1 text-[11px] font-bold uppercase tracking-wide text-[#0a3a5c] shadow">
+                    <PlayCircle className="h-3.5 w-3.5 text-[#41b2fd]" />
+                    How to Use
+                  </div>
+
+                  {/* center play button */}
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <span className="flex h-14 w-14 items-center justify-center rounded-full bg-[#FF0000] text-white shadow-lg ring-4 ring-white/30 transition group-hover:scale-110">
+                    <span className="flex h-14 w-14 items-center justify-center rounded-full border-2 border-white/70 bg-white/15 text-white backdrop-blur-sm transition group-hover:scale-110 group-hover:bg-[#41b2fd]">
                       <Play className="h-6 w-6 fill-white" />
                     </span>
                   </div>
-                  <span className="absolute right-2 bottom-2 rounded bg-black/80 px-1.5 py-0.5 text-xs font-medium text-white">
-                    MBD Project
-                  </span>
+
+                  {/* bottom channel bar */}
+                  <div className="absolute inset-x-0 bottom-0 flex items-center gap-2 bg-gradient-to-t from-black/85 to-transparent px-3 pb-2.5 pt-6">
+                    <span className="flex h-5 w-5 items-center justify-center rounded-full bg-white text-[9px] font-black text-[#0a3a5c]">
+                      M
+                    </span>
+                    <span className="text-xs font-semibold text-white">
+                      MBD Project
+                    </span>
+                  </div>
                 </div>
                 <div className="p-4">
                   <p className="line-clamp-2 font-medium text-slate-800">
